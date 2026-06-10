@@ -197,6 +197,12 @@ button {
     font-size: 15px;
 }
 
+.main-header {
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
 .project-sect ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -207,15 +213,13 @@ button {
 }
 
 .project li {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .project {
     display: flex;
     background-color: white;
-    padding: 0px;
-    border: 1px solid black;
     flex-direction: column;
     border-radius: 20px;
     border-left: 4px solid orange;
@@ -223,18 +227,91 @@ button {
 
 .p-text {
     display: flex;
-    margin-top: 10px;
     margin-left: 10px;
     border: none;
     font-weight: 200;
     color: gray;
-    padding: 20px;
+    padding-inline: 20px;
+    overflow: auto;
+    max-height: 35px;
+}
+
+.p-text::-webkit-scrollbar {
+    display: none;
 }
 
 .announcement-sect {
     grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-sect ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 70%;
+    margin-left: 20px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.announcement-sect li:not(:last-child) {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.an-text {
+    font-size: 15px;
+    color: gray;
+}
+
+
+.other-header {
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 700;
 }
 
 .trending-sect {
     grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-sect ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 70%;
+    margin-left: 20px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.t-dinos {
+    filter: brightness(1);
+    height: 20px;
+    background-color: orange;
+    border-radius: 500px;
+    padding: 2px;
+}
+
+.trending-sect li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 10px;
+    color: gray;
 }
